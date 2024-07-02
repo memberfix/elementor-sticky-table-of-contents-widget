@@ -1,0 +1,431 @@
+.mftoc-card-secondary {
+ background:#182151;
+ color:#fff
+}
+.mftoc-card {
+ position:relative;
+ box-sizing:border-box
+}
+.mftoc-card-body {
+ padding:30px 30px
+}
+.mftoc-card-header {
+ padding:15px 30px
+}
+.mftoc-card-footer {
+ padding:15px 30px
+}
+@media (min-width:1200px) {
+ .mftoc-card-body {
+  padding:40px 40px
+ }
+ .mftoc-card-header {
+  padding:20px 40px
+ }
+ .mftoc-card-footer {
+  padding:20px 40px
+ }
+}
+.mftoc-card-body::after,
+.mftoc-card-header::after,
+.mftoc-card-footer::after {
+ clear:both
+}
+.mftoc-card-body>:last-child,
+.mftoc-card-header>:last-child,
+.mftoc-card-footer>:last-child {
+ margin-bottom:0
+}
+.mftoc-card-title {
+ font-size:1.5rem;
+ line-height:1.4
+}
+.mftoc-card-small.mftoc-card-body,
+.mftoc-card-small .mftoc-card-body {
+ padding:20px 20px
+}
+.mftoc-card-small .mftoc-card-header {
+ padding:13px 20px
+}
+.mftoc-card-small .mftoc-card-footer {
+ padding:13px 20px
+}
+@media (min-width:1200px) {
+ .mftoc-card-large.mftoc-card-body,
+ .mftoc-card-large .mftoc-card-body {
+  padding:70px 70px
+ }
+ .mftoc-card-large .mftoc-card-header {
+  padding:35px 70px
+ }
+ .mftoc-card-large .mftoc-card-footer {
+  padding:35px 70px
+ }
+}
+.mftoc-light .mftoc-nav-default>li.mftoc-active>a,
+.mftoc-section-primary:not(.mftoc-preserve-color) .mftoc-nav-default>li.mftoc-active>a,
+.mftoc-section-secondary:not(.mftoc-preserve-color) .mftoc-nav-default>li.mftoc-active>a,
+.mftoc-tile-primary:not(.mftoc-preserve-color) .mftoc-nav-default>li.mftoc-active>a,
+.mftoc-tile-secondary:not(.mftoc-preserve-color) .mftoc-nav-default>li.mftoc-active>a,
+.mftoc-card-primary.mftoc-card-body .mftoc-nav-default>li.mftoc-active>a,
+.mftoc-card-primary>:not([class*='mftoc-card-media']) .mftoc-nav-default>li.mftoc-active>a,
+.mftoc-card-secondary.mftoc-card-body .mftoc-nav-default>li.mftoc-active>a,
+.mftoc-card-secondary>:not([class*='mftoc-card-media']) .mftoc-nav-default>li.mftoc-active>a,
+.mftoc-overlay-primary .mftoc-nav-default>li.mftoc-active>a,
+.mftoc-offcanvas-bar .mftoc-nav-default>li.mftoc-active>a {
+ color:#fff
+}
+.mftoc-light,
+.mftoc-section-primary:not(.mftoc-preserve-color),
+.mftoc-section-secondary:not(.mftoc-preserve-color),
+.mftoc-tile-primary:not(.mftoc-preserve-color),
+.mftoc-tile-secondary:not(.mftoc-preserve-color),
+.mftoc-card-primary.mftoc-card-body,
+.mftoc-card-primary>:not([class*='mftoc-card-media']),
+.mftoc-card-secondary.mftoc-card-body,
+.mftoc-card-secondary>:not([class*='mftoc-card-media']),
+.mftoc-overlay-primary,
+.mftoc-offcanvas-bar {
+ color:rgba(255,255,255,0.7)
+}
+.mftoc-card-body>:last-child,
+.mftoc-card-header>:last-child,
+.mftoc-card-footer>:last-child {
+ margin-bottom:0
+}
+.mftoc-card-body::before,
+.mftoc-card-body::after,
+.mftoc-card-header::before,
+.mftoc-card-header::after,
+.mftoc-card-footer::before,
+.mftoc-card-footer::after {
+ content:"";
+ display:table
+}
+.mftoc-position-top {
+ top:0;
+ left:0;
+ right:0
+}
+.mftoc-position-bottom {
+ bottom:0;
+ left:0;
+ right:0
+}
+.mftoc-position-left {
+ top:0;
+ bottom:0;
+ left:0
+}
+.mftoc-position-right {
+ top:0;
+ bottom:0;
+ right:0
+}
+.mftoc-position-top-left {
+ top:0;
+ left:0
+}
+.mftoc-position-top-right {
+ top:0;
+ right:0
+}
+.mftoc-position-bottom-left {
+ bottom:0;
+ left:0
+}
+.mftoc-position-bottom-right {
+ bottom:0;
+ right:0
+}
+.mftoc-position-center {
+ top:50%;
+ left:50%;
+ transform:translate(-50%, -50%);
+ width:-moz-max-content;
+ width:max-content;
+ max-width:100%;
+ box-sizing:border-box
+}
+[class*='mftoc-position-center-left'],
+[class*='mftoc-position-center-right'] {
+ top:50%;
+ transform:translateY(-50%)
+}
+.mftoc-position-center-left {
+ left:0
+}
+.mftoc-position-center-right {
+ right:0
+}
+.mftoc-position-center-left-out {
+ right:100%;
+ width:-moz-max-content;
+ width:max-content
+}
+.mftoc-position-center-right-out {
+ left:100%;
+ width:-moz-max-content;
+ width:max-content
+}
+.mftoc-position-top-center,
+.mftoc-position-bottom-center {
+ left:50%;
+ transform:translateX(-50%);
+ width:-moz-max-content;
+ width:max-content;
+ max-width:100%;
+ box-sizing:border-box
+}
+.mftoc-position-top-center {
+ top:0
+}
+.mftoc-position-bottom-center {
+ bottom:0
+}
+.mftoc-position-cover {
+ position:absolute;
+ top:0;
+ bottom:0;
+ left:0;
+ right:0
+}
+.mftoc-position-relative {
+ position:relative !important
+}
+.mftoc-position-absolute {
+ position:absolute !important
+}
+.mftoc-position-fixed {
+ position:fixed !important
+}
+.mftoc-position-z-index {
+ z-index:1
+}
+.mftoc-position-small {
+ max-width:calc(100% - (15px * 2));
+ margin:15px
+}
+.mftoc-position-small.mftoc-position-center {
+ transform:translate(-50%, -50%) translate(-15px, -15px)
+}
+.mftoc-position-small[class*='mftoc-position-center-left'],
+.mftoc-position-small[class*='mftoc-position-center-right'] {
+ transform:translateY(-50%) translateY(-15px)
+}
+.mftoc-position-small.mftoc-position-top-center,
+.mftoc-position-small.mftoc-position-bottom-center {
+ transform:translateX(-50%) translateX(-15px)
+}
+.mftoc-position-medium {
+ max-width:calc(100% - (30px * 2));
+ margin:30px
+}
+.mftoc-position-medium.mftoc-position-center {
+ transform:translate(-50%, -50%) translate(-30px, -30px)
+}
+.mftoc-position-medium[class*='mftoc-position-center-left'],
+.mftoc-position-medium[class*='mftoc-position-center-right'] {
+ transform:translateY(-50%) translateY(-30px)
+}
+.mftoc-position-medium.mftoc-position-top-center,
+.mftoc-position-medium.mftoc-position-bottom-center {
+ transform:translateX(-50%) translateX(-30px)
+}
+.mftoc-position-large {
+ max-width:calc(100% - (30px * 2));
+ margin:30px
+}
+.mftoc-position-large.mftoc-position-center {
+ transform:translate(-50%, -50%) translate(-30px, -30px)
+}
+.mftoc-position-large[class*='mftoc-position-center-left'],
+.mftoc-position-large[class*='mftoc-position-center-right'] {
+ transform:translateY(-50%) translateY(-30px)
+}
+.mftoc-position-large.mftoc-position-top-center,
+.mftoc-position-large.mftoc-position-bottom-center {
+ transform:translateX(-50%) translateX(-30px)
+}
+@media (min-width:1200px) {
+ .mftoc-position-large {
+  max-width:calc(100% - (50px * 2));
+  margin:50px
+ }
+ .mftoc-position-large.mftoc-position-center {
+  transform:translate(-50%, -50%) translate(-50px, -50px)
+ }
+ .mftoc-position-large[class*='mftoc-position-center-left'],
+ .mftoc-position-large[class*='mftoc-position-center-right'] {
+  transform:translateY(-50%) translateY(-50px)
+ }
+ .mftoc-position-large.mftoc-position-top-center,
+ .mftoc-position-large.mftoc-position-bottom-center {
+  transform:translateX(-50%) translateX(-50px)
+ }
+}
+.mftoc-nav,
+.mftoc-nav ul {
+ margin:0;
+ padding:0;
+ list-style:none
+}
+.mftoc-nav li>a {
+ display:block;
+ text-decoration:none
+}
+.mftoc-nav li>a:focus {
+ outline:none
+}
+.mftoc-nav>li>a {
+ padding:5px 0
+}
+ul.mftoc-nav-sub {
+ padding:5px 0 5px 15px
+}
+.mftoc-nav-sub ul {
+ padding-left:15px
+}
+.mftoc-nav-sub a {
+ padding:2px 0
+}
+.elementor-widget-mftoc-table-of-content .mftoc-drop {
+ margin-top:0
+}
+.elementor-widget-mftoc-table-of-content .mftoc-toggle-button-wrapper {
+ z-index:1030
+}
+.elementor-widget-mftoc-table-of-content .mftoc-toggle-button-wrapper a.mftoc-toggle-button {
+ background:#14abf4;
+ color:#fff
+}
+.mftoc-ofc-table-of-content .mftoc-offcanvas-bar .mftoc-offcanvas-close {
+ color:#fff
+}
+.mftoc-table-of-content .mftoc-nav li a {
+ font-weight:700;
+ color: #ccc;
+ border-bottom:1px solid rgba(255,255,255,0.1)
+}
+.mftoc-table-of-content .mftoc-nav li.mftoc-active>a {
+ color:#fff;
+ border-bottom-color:rgba(255,255,255,0.4)
+}
+.mftoc-table-of-content .mftoc-nav>.mftoc-nav li a {
+ font-weight:400
+}
+.mftoc-table-of-content .mftoc-nav>.mftoc-nav>.mftoc-nav li a {
+ font-size:14px
+}
+.table-of-content-layout-fixed {
+ position:relative !important
+}
+.table-of-content-layout-dropdown {
+ position:fixed
+}
+.mftoc-light a.mftoc-link-muted,
+.mftoc-light .mftoc-link-muted a,
+.mftoc-section-primary:not(.mftoc-preserve-color) a.mftoc-link-muted,
+.mftoc-section-primary:not(.mftoc-preserve-color) .mftoc-link-muted a,
+.mftoc-section-secondary:not(.mftoc-preserve-color) a.mftoc-link-muted,
+.mftoc-section-secondary:not(.mftoc-preserve-color) .mftoc-link-muted a,
+.mftoc-tile-primary:not(.mftoc-preserve-color) a.mftoc-link-muted,
+.mftoc-tile-primary:not(.mftoc-preserve-color) .mftoc-link-muted a,
+.mftoc-tile-secondary:not(.mftoc-preserve-color) a.mftoc-link-muted,
+.mftoc-tile-secondary:not(.mftoc-preserve-color) .mftoc-link-muted a,
+.mftoc-card-primary.mftoc-card-body a.mftoc-link-muted,
+.mftoc-card-primary.mftoc-card-body .mftoc-link-muted a,
+.mftoc-card-primary>:not([class*='mftoc-card-media']) a.mftoc-link-muted,
+.mftoc-card-primary>:not([class*='mftoc-card-media']) .mftoc-link-muted a,
+.mftoc-card-secondary.mftoc-card-body a.mftoc-link-muted,
+.mftoc-card-secondary.mftoc-card-body .mftoc-link-muted a,
+.mftoc-card-secondary>:not([class*='mftoc-card-media']) a.mftoc-link-muted,
+.mftoc-card-secondary>:not([class*='mftoc-card-media']) .mftoc-link-muted a,
+.mftoc-overlay-primary a.mftoc-link-muted,
+.mftoc-overlay-primary .mftoc-link-muted a,
+.mftoc-offcanvas-bar a.mftoc-link-muted,
+.mftoc-offcanvas-bar .mftoc-link-muted a {
+ color:rgba(255,255,255,0.5)
+}
+.mftoc-light a.mftoc-link-muted:hover,
+.mftoc-light .mftoc-link-muted a:hover,
+.mftoc-section-primary:not(.mftoc-preserve-color) a.mftoc-link-muted:hover,
+.mftoc-section-primary:not(.mftoc-preserve-color) .mftoc-link-muted a:hover,
+.mftoc-section-secondary:not(.mftoc-preserve-color) a.mftoc-link-muted:hover,
+.mftoc-section-secondary:not(.mftoc-preserve-color) .mftoc-link-muted a:hover,
+.mftoc-tile-primary:not(.mftoc-preserve-color) a.mftoc-link-muted:hover,
+.mftoc-tile-primary:not(.mftoc-preserve-color) .mftoc-link-muted a:hover,
+.mftoc-tile-secondary:not(.mftoc-preserve-color) a.mftoc-link-muted:hover,
+.mftoc-tile-secondary:not(.mftoc-preserve-color) .mftoc-link-muted a:hover,
+.mftoc-card-primary.mftoc-card-body a.mftoc-link-muted:hover,
+.mftoc-card-primary.mftoc-card-body .mftoc-link-muted a:hover,
+.mftoc-card-primary>:not([class*='mftoc-card-media']) a.mftoc-link-muted:hover,
+.mftoc-card-primary>:not([class*='mftoc-card-media']) .mftoc-link-muted a:hover,
+.mftoc-card-secondary.mftoc-card-body a.mftoc-link-muted:hover,
+.mftoc-card-secondary.mftoc-card-body .mftoc-link-muted a:hover,
+.mftoc-card-secondary>:not([class*='mftoc-card-media']) a.mftoc-link-muted:hover,
+.mftoc-card-secondary>:not([class*='mftoc-card-media']) .mftoc-link-muted a:hover,
+.mftoc-overlay-primary a.mftoc-link-muted:hover,
+.mftoc-overlay-primary .mftoc-link-muted a:hover,
+.mftoc-offcanvas-bar a.mftoc-link-muted:hover,
+.mftoc-offcanvas-bar .mftoc-link-muted a:hover {
+ color:rgba(255,255,255,0.7)
+}
+.mftoc-light a.mftoc-link-text:hover,
+.mftoc-light .mftoc-link-text a:hover,
+.mftoc-section-primary:not(.mftoc-preserve-color) a.mftoc-link-text:hover,
+.mftoc-section-primary:not(.mftoc-preserve-color) .mftoc-link-text a:hover,
+.mftoc-section-secondary:not(.mftoc-preserve-color) a.mftoc-link-text:hover,
+.mftoc-section-secondary:not(.mftoc-preserve-color) .mftoc-link-text a:hover,
+.mftoc-tile-primary:not(.mftoc-preserve-color) a.mftoc-link-text:hover,
+.mftoc-tile-primary:not(.mftoc-preserve-color) .mftoc-link-text a:hover,
+.mftoc-tile-secondary:not(.mftoc-preserve-color) a.mftoc-link-text:hover,
+.mftoc-tile-secondary:not(.mftoc-preserve-color) .mftoc-link-text a:hover,
+.mftoc-card-primary.mftoc-card-body a.mftoc-link-text:hover,
+.mftoc-card-primary.mftoc-card-body .mftoc-link-text a:hover,
+.mftoc-card-primary>:not([class*='mftoc-card-media']) a.mftoc-link-text:hover,
+.mftoc-card-primary>:not([class*='mftoc-card-media']) .mftoc-link-text a:hover,
+.mftoc-card-secondary.mftoc-card-body a.mftoc-link-text:hover,
+.mftoc-card-secondary.mftoc-card-body .mftoc-link-text a:hover,
+.mftoc-card-secondary>:not([class*='mftoc-card-media']) a.mftoc-link-text:hover,
+.mftoc-card-secondary>:not([class*='mftoc-card-media']) .mftoc-link-text a:hover,
+.mftoc-overlay-primary a.mftoc-link-text:hover,
+.mftoc-overlay-primary .mftoc-link-text a:hover,
+.mftoc-offcanvas-bar a.mftoc-link-text:hover,
+.mftoc-offcanvas-bar .mftoc-link-text a:hover {
+ color:rgba(255,255,255,0.5)
+}
+.mftoc-light a.mftoc-link-heading:hover,
+.mftoc-light .mftoc-link-heading a:hover,
+.mftoc-section-primary:not(.mftoc-preserve-color) a.mftoc-link-heading:hover,
+.mftoc-section-primary:not(.mftoc-preserve-color) .mftoc-link-heading a:hover,
+.mftoc-section-secondary:not(.mftoc-preserve-color) a.mftoc-link-heading:hover,
+.mftoc-section-secondary:not(.mftoc-preserve-color) .mftoc-link-heading a:hover,
+.mftoc-tile-primary:not(.mftoc-preserve-color) a.mftoc-link-heading:hover,
+.mftoc-tile-primary:not(.mftoc-preserve-color) .mftoc-link-heading a:hover,
+.mftoc-tile-secondary:not(.mftoc-preserve-color) a.mftoc-link-heading:hover,
+.mftoc-tile-secondary:not(.mftoc-preserve-color) .mftoc-link-heading a:hover,
+.mftoc-card-primary.mftoc-card-body a.mftoc-link-heading:hover,
+.mftoc-card-primary.mftoc-card-body .mftoc-link-heading a:hover,
+.mftoc-card-primary>:not([class*='mftoc-card-media']) a.mftoc-link-heading:hover,
+.mftoc-card-primary>:not([class*='mftoc-card-media']) .mftoc-link-heading a:hover,
+.mftoc-card-secondary.mftoc-card-body a.mftoc-link-heading:hover,
+.mftoc-card-secondary.mftoc-card-body .mftoc-link-heading a:hover,
+.mftoc-card-secondary>:not([class*='mftoc-card-media']) a.mftoc-link-heading:hover,
+.mftoc-card-secondary>:not([class*='mftoc-card-media']) .mftoc-link-heading a:hover,
+.mftoc-overlay-primary a.mftoc-link-heading:hover,
+.mftoc-overlay-primary .mftoc-link-heading a:hover,
+.mftoc-offcanvas-bar a.mftoc-link-heading:hover,
+.mftoc-offcanvas-bar .mftoc-link-heading a:hover {
+ color:#fff
+}
+.mftoc-card-secondary .mftoc-nav li a {
+    text-decoration: none !important;
+}
+@media (min-width:960px) {
+ .table-of-content-layout-fixed {
+  position:fixed !important;
+  width:320px;
+  z-index:999
+ }
+}
